@@ -3,90 +3,854 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuisFer</title>
-    <link rel="shortcut icon" href="Assets/img/Logo_Real-removebg-preview.png" type="image/x-icon">
+    <title>Luis Gómez - Full Stack Developer</title>
+    <meta name="description" content="Luis Gómez - Full Stack Developer specializing in AI, React, Node.js, and modern web technologies">
+    <meta name="keywords" content="Full Stack Developer, JavaScript, React, Node.js, AI, Python, Colombia">
+    <meta property="og:title" content="Luis Gómez - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Passionate Full Stack Developer with expertise in AI, React, and modern web development">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="Assets/img/logo_Luisfer_con_fondo_negro-Photoroom.png" type="image/x-icon">
     <link rel="stylesheet" href="Assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <figure>
-            <img src="Assets/img/Logo_Real-removebg-preview.png">
-        </figure>
-        <nav>
-            <ul>
-<li><a href="#studies">Studies</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact me</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="banner">
-            <div>
-                <h1 class="left" data-letter-effect>Luis Gomez</h1>
-                <h1 class="right" data-letter-effect>Full Stack Developer</h1>
-            </div>
-            <button onclick="window.open('Assets/Pdf/CV Luis Gomez English.pdf')">Download CV</button>
-            <canvas id="dotsCanvas"></canvas>
+    <header class="futuristic-header">
+        <div class="header-container">
+            <figure class="logo-container">
+                <img src="Assets/img/logo_Luisfer_con_fondo_negro.png" alt="Luis Gomez Logo" class="logo">
+                <div class="logo-glow"></div>
+            </figure>
+            <nav class="nav-container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </nav>
         </div>
+        <div class="header-border"></div>
+    </header>
 
-        <!-- Slider 3D Section -->
-        <section class="slider-section">
-            <h1 class="left section-title" data-letter-effect>WORKS</h1>
-            <div class="slider-container">
-                <div class="slider" style="--quantity: 10">
-                    <div class="item" style="--position: 1"><img src="Assets/img/slider_3d/dragon_1.jpg" alt=""></div>
-                    <div class="item" style="--position: 2"><img src="Assets/img/slider_3d/dragon_2.jpg" alt=""></div>
-                    <div class="item" style="--position: 3"><img src="Assets/img/slider_3d/dragon_3.jpg" alt=""></div>
-                    <div class="item" style="--position: 4"><img src="Assets/img/slider_3d/dragon_4.jpg" alt=""></div>
-                    <div class="item" style="--position: 5"><img src="Assets/img/slider_3d/dragon_5.jpg" alt=""></div>
-                    <div class="item" style="--position: 6"><img src="Assets/img/slider_3d/dragon_6.jpg" alt=""></div>
-                    <div class="item" style="--position: 7"><img src="Assets/img/slider_3d/dragon_7.jpg" alt=""></div>
-                    <div class="item" style="--position: 8"><img src="Assets/img/slider_3d/dragon_8.jpg" alt=""></div>
-                    <div class="item" style="--position: 9"><img src="Assets/img/slider_3d/dragon_9.jpg" alt=""></div>
-                    <div class="item" style="--position: 10"><img src="Assets/img/slider_3d/dragon_10.jpg" alt=""></div>
+    <main>
+        <!-- Banner Section -->
+        <div class="banner">
+    <div>
+        <h1 class="left" data-letter-effect>Luis Gómez</h1>
+        <h1 class="right" data-letter-effect id="rotating-skill">Full Stack Developer</h1>
+    </div>
+    <button onclick="window.open('/Assets/Pdf/CV Luis Gomez English.pdf')">
+        <i class="fas fa-download"></i> Download CV
+    </button>
+    <canvas id="dotsCanvas"></canvas>
+</div>
+
+        <!-- About Me Section -->
+        <section class="about-section" id="about">
+            <h1 class="left section-title" data-letter-effect>ABOUT ME</h1>
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="intro-text">
+                            Passionate Full Stack Developer with a strong foundation in JavaScript, React, and modern web development practices. 
+                            Skilled in creating responsive, scalable, and user-friendly web applications with a focus on AI integration and automation.
+                        </p>
+                        <p>
+                            Currently working at <strong>Antares Innovate</strong> developing AI-powered virtual agents and migrating legacy systems 
+                            to modern frontend platforms. My experience spans from frontend technologies like React and Angular to backend 
+                            development with Node.js, Python, and FastAPI.
+                        </p>
+                        <p>
+                            Proactive learner with a focus on continuous improvement and staying updated with the latest technologies. 
+                            Strong team player with excellent communication and problem-solving skills, fluent in both Spanish and English.
+                        </p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mosquera, Cundinamarca, Colombia</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-language"></i>
+                                <span>Spanish (Native), English (C1 Level)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Electronic Engineering Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>4+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>32+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>5+</h3>
+                            <p>Technologies Mastered</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
-<h1 class="left section-title" data-letter-effect>EDUCATION</h1>
-<section class="studies" id="studies">
-        
-            <div class="study-card">
-                <p class="institution">National Open and Distance University</p>
-                <p class="degree">Electronic Engineering</p>
-                <p class="year">Ongoing</p>
-            </div>
-            <div class="study-card">
-                <p class="institution">Universidad Autónoma de Bucaramanga</p>
-                <p class="degree">Labor Technician in Programming</p>
-                <p class="year">2023</p>
-            </div>
-            <div class="study-card">
-                <p class="institution">Universidad Sergio Arboleda</p>
-                <p class="degree">Data Analysis Programming</p>
-                <p class="year">2022</p>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <h1 class="left section-title" data-letter-effect>RECENT PROJECTS</h1>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Assets/img/agentpage.png" alt="AI Virtual Agent Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://luisnefelibato.github.io/AgenteP/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Luisnefelibato" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Virtual Agent Platform</h3>
+                        <p>
+                            Designed and developed AI-powered virtual agents using Python (FastAPI, LangChain) and React. 
+                            Integrated OpenAI APIs for natural language understanding and automated institution outreach processes. 
+                            Dockerized the entire system and optimized communication handling with Redis.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">LangChain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BobFront -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="Assets/img/bobpage.png" alt="BobFront Platform">
+                    <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="https://bobfront.vercel.app/" class="project-link">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Luisnefelibato" class="project-link">
+                          <i class="fab fa-github"></i> Code
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>BobFront</h3>
+                    <p>
+                      Developed a modern and responsive web interface for an AI-driven assistant. 
+                      Built with React and optimized for seamless user interaction, featuring component-based architecture, 
+                      reusable hooks, and responsive design principles.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">CSS</span>
+                      <span class="tech-tag">Vercel</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Solutions Form -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="Assets/img/solutionsformpage.png" alt="Solutions Form">
+                    <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="https://solutions-form.vercel.app/" class="project-link">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Luisnefelibato" class="project-link">
+                          <i class="fab fa-github"></i> Code
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>Solutions Form</h3>
+                    <p>
+                      Engineered an advanced form system with validation, API integration, and state management. 
+                      Designed for scalability and optimized to capture and process structured data securely, 
+                      leveraging React hooks and modular components.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">Node.js</span>
+                      <span class="tech-tag">TailwindCSS</span>
+                      <span class="tech-tag">API Integration</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Contafin -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="Assets/img/contafinpage.png" alt="Contafin Platform">
+                    <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="https://contafin-front.vercel.app/" class="project-link">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Luisnefelibato" class="project-link">
+                          <i class="fab fa-github"></i> Code
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>Contafin</h3>
+                    <p>
+                      Designed a financial management dashboard with real-time data visualization and analytics. 
+                      Implemented charting libraries for KPIs, optimized API calls for performance, and 
+                      built reusable UI components to deliver a seamless user experience.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">Chart.js</span>
+                      <span class="tech-tag">Bootstrap</span>
+                      <span class="tech-tag">API Integration</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Nyla Front -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="Assets/img/nylapge.png" alt="Nyla Talent Platform">
+                    <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="https://nyla-front.vercel.app/" class="project-link">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Luisnefelibato" class="project-link">
+                          <i class="fab fa-github"></i> Code
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>Nyla Talent</h3>
+                    <p>
+                      Developed a front-end for AI-powered audition and talent management. 
+                      Integrated FastAPI backend services and OpenAI APIs for automated outreach and data handling. 
+                      Dockerized environment with Redis for optimized state management and scalability.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">FastAPI</span>
+                      <span class="tech-tag">OpenAI API</span>
+                      <span class="tech-tag">Docker</span>
+                      <span class="tech-tag">Redis</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Asistenter -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="Assets/img/asistenteRpage.png" alt="Asistenter AI Assistant">
+                    <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="https://asistenter-three.vercel.app/" class="project-link">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Luisnefelibato" class="project-link">
+                          <i class="fab fa-github"></i> Code
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>Asistenter</h3>
+                    <p>
+                      Built an intelligent AI assistant interface with conversational workflows. 
+                      Leveraged React for the frontend, integrated third-party AI APIs, and applied TailwindCSS 
+                      for a modern and responsive design tailored for automation tasks.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">AI APIs</span>
+                      <span class="tech-tag">TailwindCSS</span>
+                      <span class="tech-tag">Vercel</span>
+                    </div>
+                  </div>
+                </div>
             </div>
         </section>
-    </main>  
 
+        <!-- Works Slider Section -->
+        <section class="slider-section">
+            <h1 class="left section-title" data-letter-effect>GALLERY</h1>
+            <div class="slider-container">
+                <div class="slider" style="--quantity: 10">
+                    <div class="item" style="--position: 1"><img src="Assets/img/Automatización e Inteligencia Artificial Transformando Profesiones y Sectores.png" alt="Project Gallery 1"></div>
+                    <div class="item" style="--position: 2"><img src="Assets/img/Viernes 2 de Septiembre.png" alt="Project Gallery 2"></div>
+                    <div class="item" style="--position: 3"><img src="Assets/img/Unius.png" alt="Project Gallery 3"></div>
+                    <div class="item" style="--position: 4"><img src="Assets/img/ABCForpage.png" alt="Project Gallery 4"></div>
+                    <div class="item" style="--position: 5"><img src="Assets/img/makeaidea.png" alt="Project Gallery 5"></div>
+                    <div class="item" style="--position: 6"><img src="Assets/img/frequency.png" alt="Project Gallery 6"></div>
+                    <div class="item" style="--position: 7"><img src="Assets/img/logototal.jpg" alt="Project Gallery 7"></div>
+                    <div class="item" style="--position: 8"><img src="Assets/img/imagedesign.png" alt="Project Gallery 8"></div>
+                    <div class="item" style="--position: 9"><img src="Assets/img/newyork.jpeg" alt="Project Gallery 9"></div>
+                    <div class="item" style="--position: 10"><img src="Assets/img/astronauta.png" alt="Project Gallery 10"></div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <h1 class="left section-title" data-letter-effect>EXPERIENCE</h1>
+            <div class="experience-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span>2025</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Full-Stack Developer</h3>
+                            <h4>Antares Innovate</h4>
+                            <p>
+                                At Antares Innovate, I developed AI-powered virtual agents and successfully migrated them to modern frontend platforms, 
+                                enhancing user interaction and process automation. Working with cutting-edge AI technologies and implementing scalable solutions.
+                            </p>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">AI/ML</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span>2022 - 2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer</h3>
+                            <h4>Unius Designers</h4>
+                            <p>
+                                Developed responsive and user-friendly web applications using React and JavaScript. 
+                                Collaborated with clients to design and implement custom solutions, ensuring high performance and scalability. 
+                                Integrated RESTful APIs and managed state using Redux and Context API. Optimized websites for speed and cross-browser compatibility.
+                            </p>
+                            <div class="experience-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span>2023</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer Intern</h3>
+                            <h4>MajoMaken TeamWork</h4>
+                            <p>
+                                Contributed to the development of a parking automation application using React and Android Studio. 
+                                Improved user interfaces and implemented new features based on client feedback. 
+                                Worked with MySQL for database management and integration.
+                            </p>
+                            <div class="experience-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Android Studio</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span>2021</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Volunteer</h3>
+                            <h4>INGOODE COMPANY</h4>
+                            <p>
+                                Participated in volunteer initiatives to distribute educational materials to low-income schools. 
+                                Demonstrated commitment to social responsibility and community engagement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <h1 class="left section-title" data-letter-effect>SKILLS</h1>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skills-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-api"></i>
+                            <span>RESTful APIs</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skills-category">
+                    <h3><i class="fas fa-robot"></i> AI & Automation</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>OpenAI API</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-link"></i>
+                            <span>LangChain</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Prompt Engineering</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Process Automation</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Webpack</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-wind"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-memory"></i>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+    <h3><i class="fas fa-laptop-code"></i> Diseño UX/UI</h3>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <i class="fab fa-figma"></i>
+            <span>Figma</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-pencil-ruler"></i>
+            <span>Wireframing</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-project-diagram"></i>
+            <span>Prototipado</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-swatchbook"></i>
+            <span>Design Systems</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-mobile-alt"></i>
+            <span>Responsive Design</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-universal-access"></i>
+            <span>Accesibilidad (WCAG)</span>
+        </div>
+        
+    </div>
+</div>
 
+            </div>
+        </section>
 
-    
- 
+        <!-- Education Section -->
+        <section class="education-section" id="education">
+            <h1 class="left section-title" data-letter-effect>EDUCATION</h1>
+            <div class="studies">
+                <div class="study-card">
+                    <div class="study-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="study-content">
+                        <p class="institution">National Open and Distance University (UNAD)</p>
+                        <p class="degree">Electronic Engineering</p>
+                        <p class="year">Ongoing</p>
+                        <p class="description">
+                            Comprehensive program covering electronics, programming, and engineering fundamentals. 
+                            Focus on modern technologies and practical applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="study-card">
+                    <div class="study-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="study-content">
+                        <p class="institution">Universidad Autónoma de Bucaramanga</p>
+                        <p class="degree">Labor Technician in Programming</p>
+                        <p class="year">2023</p>
+                        <p class="description">
+                            Specialized program in software development and programming methodologies. 
+                            Practical training in multiple programming languages and development tools.
+                        </p>
+                    </div>
+                </div>
+                <div class="study-card">
+                    <div class="study-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="study-content">
+                        <p class="institution">Universidad Sergio Arboleda</p>
+                        <p class="degree">Data Analysis Programming</p>
+                        <p class="year">2022</p>
+                        <p class="description">
+                            Focused on data analysis techniques, statistical programming, and data visualization. 
+                            Training in Python, SQL, and modern data analysis tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h1 class="left section-title" data-letter-effect>CONTACT ME</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:luisfgomezosp@gmail.com">luisfgomezosp@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="https://wa.link/ynlbpj" target="_blank"></a>+57 319-3431250</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Mosquera, Cundinamarca, Colombia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/luis-fernando-gomez-ospina-0a9295256/" target="_blank">
+                                linkedin.com/in/luis-fernando-gomez-ospina
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+<!--
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="send-button">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>-->
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Luis Gómez. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/luis-fernando-gomez-ospina-0a9295256/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:luisfgomezosp@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
+    <!-- ===== CHATBOT FLOTANTE LUISFER ===== -->
+    <!-- Botón flotante del chat -->
+    <div id="chat-floating-button" class="chat-floating-btn" style="opacity: 1; transform: scale(1);">
+        <div class="chat-btn-icon">
+            <img src="Assets/img/logo_Luisfer_con_fondo_negro.png" alt="Luis Gomez Logo" class="logo-chat-btn">
+        </div>
+        <div class="chat-btn-pulse"></div>
+        <div class="chat-btn-text">Chat con Luisfer</div>
+    </div>
+
+    <!-- Ventana del chat -->
+    <div id="chat-window" class="chat-window">
+        <!-- Header del chat -->
+        <div class="chat-header">
+            <div class="chat-avatar">
+                <img src="Assets/img/logo_Luisfer_con_fondo_negro.png" alt="Luis Gomez Logo" class="logo-chat-btn">
+                <div class="avatar-status"></div>
+            </div>
+            <div class="chat-info">
+                <h3>Luisfer IA</h3>
+                <p>Asistente Virtual</p>
+            </div>
+            <div class="chat-actions">
+                <button id="clear-chat" class="chat-action-btn" title="Limpiar chat">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                    </svg>
+                </button>
+                <button id="close-chat" class="chat-action-btn" title="Cerrar chat">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenedor de mensajes -->
+        <div class="chat-messages" id="chat-messages">
+            <div class="chat-message bot-message">
+                <div class="message-avatar">
+                    <img src="Assets/img/chatluisfer.jpeg" alt="Luis Gomez Logo" class="logo-chat-btn">
+                </div>
+                <div class="message-content">
+                    <div class="message-bubble">
+                        ¡Hola! 👋 Soy Luisfer IA, el asistente virtual de Luis Gómez. Pregúntame sobre su experiencia, proyectos, skills o cualquier información profesional. ¿En qué puedo ayudarte?
+                    </div>
+                    <div class="message-time">Ahora</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicador de escritura -->
+        <div class="typing-indicator" id="typing-indicator" style="display: none;">
+            <div class="message-avatar">
+                <div class="avatar-circle">L</div>
+            </div>
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Input del chat -->
+        <div class="chat-input-container">
+            <div class="chat-input-wrapper">
+                <input 
+                    type="text" 
+                    id="chat-input" 
+                    placeholder="Escribe tu mensaje..." 
+                    maxlength="300"
+                    autocomplete="off"
+                />
+                <button id="send-message" class="send-btn" disabled>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="chat-footer">
+                <small>Powered by Gemini AI</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay para cerrar en móviles -->
+    <div id="chat-overlay" class="chat-overlay"></div>
+
+    <!-- Scripts - Asegurarse de que se carguen después del HTML -->
+    <script>
+        // Script de debug para verificar elementos
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🔍 Verificando elementos del chatbot...');
+            
+            // Verificar elementos principales
+            const floatingBtn = document.getElementById('chat-floating-button');
+            const chatWindow = document.getElementById('chat-window');
+            const chatOverlay = document.getElementById('chat-overlay');
+            
+            console.log('✅ Botón flotante:', floatingBtn ? 'Encontrado' : '❌ No encontrado');
+            console.log('✅ Ventana de chat:', chatWindow ? 'Encontrado' : '❌ No encontrado');
+            console.log('✅ Overlay:', chatOverlay ? 'Encontrado' : '❌ No encontrado');
+            
+            if (floatingBtn && chatWindow && chatOverlay) {
+                console.log('🎉 Todos los elementos encontrados. Configurando eventos...');
+                
+                // Evento simple de click para abrir/cerrar
+                floatingBtn.addEventListener('click', function() {
+                    console.log('🖱️ Click en botón flotante detectado');
+                    
+                    if (chatWindow.classList.contains('open')) {
+                        chatWindow.classList.remove('open');
+                        chatOverlay.classList.remove('show');
+                        console.log('❌ Chat cerrado');
+                    } else {
+                        chatWindow.classList.add('open');
+                        chatOverlay.classList.add('show');
+                        console.log('✅ Chat abierto');
+                        
+                        // Focus en input después de la animación
+                        setTimeout(() => {
+                            const chatInput = document.getElementById('chat-input');
+                            if (chatInput) chatInput.focus();
+                        }, 400);
+                    }
+                });
+                
+                // Cerrar chat con overlay
+                chatOverlay.addEventListener('click', function() {
+                    chatWindow.classList.remove('open');
+                    chatOverlay.classList.remove('show');
+                    console.log('❌ Chat cerrado por overlay');
+                });
+                
+                // Cerrar chat con botón X
+                const closeBtn = document.getElementById('close-chat');
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', function() {
+                        chatWindow.classList.remove('open');
+                        chatOverlay.classList.remove('show');
+                        console.log('❌ Chat cerrado por botón X');
+                    });
+                }
+                
+                console.log('🚀 Eventos configurados correctamente');
+            } else {
+                console.error('❌ Faltan elementos del chatbot');
+            }
+        });
+    </script>
     <script src="Assets/js/app.js"></script>
 </body>
 </html>
